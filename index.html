@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./estilos.css">
+    
+</head>
+<body>
+    
+<section class="form-section">
+    <div class="form-container">
+        <h2 class="form-title">Introduce tus datos para crear una cuenta</h2>
+        <p class="form-subtitle">Los valores marcados con un * son obligatorios</p>
+        <form class="form" action="/">
+            <label>
+                NOMBRE*:
+                <input id="name" type="text" name="nombre" placeholder="Introduce tu nombre..." required>
+            </label>
+            
+            <label>
+                PRIMER APELLIDO*:
+                <input id="surname" type="text" name="primer apellido" placeholder="Introduce tu primer apellido..." required>               
+            </label>
+            
+            <label>
+                SEGUNDO APELLIDO:
+                <input id="second-surname" type="text" name="segundo apellido" placeholder="Introduce tu segundo apellido...">               
+            </label>
+            
+            <label>
+                DNI:
+                <input id="dni" type="text" name="dni" placeholder="Introduce tu DNI..." pattern="[0-9]{8}[A-Za-z]{1}">
+            </label>
+            
+            <button class="form-btn" type="submit">REGISTRO</button>
+        </form>
+    </div>
+</section>
+</body>
+</html>
